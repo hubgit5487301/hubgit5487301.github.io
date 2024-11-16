@@ -1,5 +1,5 @@
 .middle-box {
-  display: flex;
+  display: none;
   flex: 1;
   flex-flow: column;
   background-color: rgba(46, 45, 45, 0.603);
