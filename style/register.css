@@ -1,0 +1,161 @@
+.middle-box {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  background-color: rgba(46, 45, 45, 0.603);
+  border: none;
+  height: 70vh;
+  max-width: 70vw;
+  box-shadow: 0px 18px 16px 0px rgb(20, 20, 20);
+  border-radius: 10px;
+  vertical-align: top;
+  justify-content: top;
+  align-items: center;
+  overflow: scroll;
+  transition: 0.15s;
+}
+
+.middle-box::-webkit-scrollbar {
+  display: none;
+}
+
+.middle-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+  background-color: rgba(46, 45, 45, 0.87);
+
+}
+
+.middle-box-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6.5vw;
+}
+
+
+.header-reg {
+  margin: auto;
+  margin-top: -5vw;
+}
+
+.college-roll-no {
+  font-size: 10px;
+  font-size: 1vw;
+  color: whitesmoke;
+  margin-top: 1.5vw;
+  margin-left: -6.8vw;
+}
+.username-reg {
+  font-size: 10px;
+  font-size: 1vw;
+  color: whitesmoke;
+  margin-top: 1vw;
+  margin-left: -8.7vw;
+}
+.email-reg {
+  font-size: 10px;
+  font-size: 1vw;
+  color: whitesmoke;
+  margin-top: 1vw;
+  margin-left: -11vw;
+}
+.password-reg {
+  font-size: 10px;
+  font-size: 1vw;
+  color: whitesmoke;
+  margin-top: 1vw;
+  margin-left: -9vw;
+}
+
+.username-box-reg,.password-box-reg,.college-roll-no-box,.email-box-reg {
+  font-size: 10px;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  padding: 6px;
+  padding-left: 10px;
+}
+
+.username-box-reg::placeholder,.password-box-reg::placeholder,.college-roll-no-box::placeholder,.email-box-reg::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+
+.forgot-password-buttona:hover {
+  text-decoration: underline;
+}
+
+.register-button-reg {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  font-size:1.2vw ;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.10s;
+  align-self: center;
+  margin-top: 1.5vw;
+  margin-left: -0.5vw;
+}
+
+.register-button-reg:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.register-button-reg:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.login-account-reg {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: stretch;
+}
+
+.login-reg {
+  font-size: 10px;
+  font-size: 1vw;
+  color: whitesmoke;
+  margin-top: 1vw;
+  margin-left: 1vw;
+}
+
+.login-button-reg {
+  padding: 0;
+  margin: 0;
+  max-width: 4.5vw;
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-size:1vw ;
+  margin-top: 0vw;
+  margin-left: -0.6vw;
+  
+}
+
+.login-button-reg:hover {
+  text-decoration: underline;
+}
+
+#leftbox, #leftboxa {
+  transition: all 0.1s ease-in-out; 
+  opacity: 1; 
+}
+
+#leftbox.hidden, #leftboxa.hidden {
+  opacity: 0; 
+  pointer-events: none; 
+}
