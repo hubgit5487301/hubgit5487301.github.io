@@ -1,12 +1,16 @@
 .general-dashboard {
-  background-image: url('/images/background-test.jpg');
+  background-image: url("/images/background-test.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   font-family: Arial,roboto;
   color: white;
   padding: 0.5vw 4vw;
-  position: fixed;
-  z-index: 5;
+}
+
+.general-dashboard::-webkit-scrollbar {
+  display: none;
 }
 
 .bottom-box {
@@ -16,8 +20,21 @@
   height: 1000vw;
   margin-top: 6.5vw;
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
-  position: fixed;
-  z-index: 5;
   left: 4.5vw;
-  right: 4.5vw;
+  top: 4.5vw;
+}
+
+.college-image {
+  display: flex;
+  flex: 1;
+  width: 80vw;
+  border: none;
+  box-shadow: 0px 18px 16px 0px rgb(20, 20, 20);
+  border-radius: 10px;
+  transition: 0.15s;
+  align-self: center;
+}
+
+.college-image:hover {
+  box-shadow: 0px 16px 20px 0px rgb(250, 245, 245);
 }
