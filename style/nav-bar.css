@@ -4,7 +4,7 @@
   border-radius: 10px;
   height: 4vw;
   justify-content: space-between;
-  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   transition: 0.15s;
   padding-bottom: 0.5vw;
   position: fixed;
@@ -23,11 +23,11 @@
   padding: 0vw;
   transition: 0.15s;
   cursor: pointer;
-  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
 }
 
 .left-content:hover {
-  transform: scale(1.14);
+  transform: scale(1.05);
   box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
   background-color: rgba(46, 45, 45, 0.87);
 }
@@ -38,16 +38,29 @@
   box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
 }
 
+.home-link{
+  text-decoration: none;
+}
+
 .home-button {
+  display: flex;
   background-color: transparent;
   border: none;
   color: white;
   font-size: 5vw;
-  padding: 0.5vw 1vw;
   font-size: 1.3vw;
   cursor: pointer;
   font-weight: bold;
   opacity: 1;
+  align-items: center;
+  gap: 0.5vw;
+  padding: 0.5vw 1vw;
+}
+
+.logo-icon {
+  height: 2vw;
+  background-color: transparent;
+  
 }
 
 .home-button:active {
@@ -73,7 +86,7 @@
   align-self: center;
   transition: 0.15s;
   cursor: pointer;
-  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.664);
   
 }
 

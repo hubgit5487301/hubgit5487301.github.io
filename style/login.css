@@ -81,6 +81,7 @@
     color: whitesmoke;
     font-size: 10px;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 .forgot-password-button:hover {
@@ -95,11 +96,12 @@
     color: white;
     font-weight: bold;
     padding: 5px 15px;
-    font-size:1.2vw ;
+    font-size:1.5vw ;
     box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
     transition: 0.10s;
     align-self: center;
     margin-top: 1vw;
+    cursor: pointer;
 }
 
 .login-button:hover {
@@ -136,6 +138,7 @@
     color: whitesmoke;
     font-size:1vw ;
     margin-top: 1vw;
+    cursor: pointer;
 }
 
 .register-button:hover {

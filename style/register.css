@@ -1,16 +1,16 @@
 .middle-box {
   display: none;
-    flex: 1;
-    flex-flow: column;
-    background-color: rgba(46, 45, 45, 0.603);
-    border: none;
-    height: 70vh;
-    box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
-    border-radius: 10px;
-    justify-content: top;
-    align-items: center;
-    overflow: scroll;
-    transition: 0.15s;
+  flex: 1;
+  flex-flow: column;
+  background-color: rgba(46, 45, 45, 0.603);
+  border: none;
+  height: 70vh;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
+  border-radius: 10px;
+  justify-content: top;
+  align-items: center;
+  overflow: scroll;
+  transition: 0.15s;
 }
 
 .middle-box::-webkit-scrollbar {
@@ -100,6 +100,7 @@
   align-self: center;
   margin-top: 1.5vw;
   margin-left: -0.5vw;
+  cursor: pointer;
 }
 
 .register-button-reg:hover {
@@ -137,6 +138,7 @@
   font-size:1vw ;
   margin-top: 0vw;
   margin-left: -0.6vw;
+  cursor: pointer;
   
 }
 

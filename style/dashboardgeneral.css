@@ -15,26 +15,160 @@
 
 .bottom-box {
   display: flex;
+  flex-direction: column;
   background-color:  rgba(46, 45, 45, 0.24);
   border-radius: 10px;
   height: 1000vw;
-  margin-top: 6.5vw;
-  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
-  left: 4.5vw;
-  top: 4.5vw;
+  margin-top: 5.5vw;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  padding: 1.5vw 1.5vw 0vw 1.5vw;
+}
+
+.bottom-first-box {
+  display: flex;
+  background-color: transparent;
+  margin-bottom: 1.5vw;
+  gap: 1.5vw;
+}
+
+.bottom-first-1-box {
+  display: flex;
+  flex: 1;
+  background-color: transparent;
 }
 
 .college-image {
   display: flex;
   flex: 1;
-  width: 80vw;
+  height: 35vw;
   border: none;
-  box-shadow: 0px 18px 16px 0px rgb(20, 20, 20);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   border-radius: 10px;
   transition: 0.15s;
-  align-self: center;
 }
 
-.college-image:hover {
-  box-shadow: 0px 16px 20px 0px rgb(250, 245, 245);
+
+.bottom-first-2-box {
+  background-color: rgba(46, 45, 45, 0.24);
+  border-radius: 10px;
+  flex: 2;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  align-items: center;
 }
+
+.IET-alumni {
+  margin-top: 5vw;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+.welcome {
+  font-size: 3vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+.welcome-text {
+  font-size: 1.05vw;
+  margin-top: 8vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  line-height: 1.5vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-button {
+  margin-left:13vw ;
+}
+
+.bottom-second-box {
+  display: flex;
+  background-color: rgba(46, 45, 45, 0.24);
+  justify-content: space-between;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  align-items: center;
+  height: 20vw;
+  border-radius: 10px;
+  padding: 2vw;
+  overflow: scroll;
+}
+
+.bottom-second-box::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom-second-1-box {
+  background-color: rgba(46, 45, 45, 0.24);
+  border-radius: 10px;
+  padding: 0.7vw 1.2vw;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.bottom-second-1-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+  background-color: rgba(46, 45, 45, 0.87);
+}
+
+.bottom-second-1-box:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+.events-head {
+  font-weight: bold;
+  font-size: 1.25vw;
+}
+
+.bottom-second-event-boxes {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-image {
+  height: 15vw;
+  background-color: rgba(46, 45, 45, 0.24);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  margin-bottom: 1vw;
+  border-radius: 10px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(46, 45, 45, 0.24);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  transition: 0.15s;
+  cursor: pointer;
+  padding: 0.5vw 1vw;
+  margin-top: 0.2vw;
+  align-items: center;
+}
+
+.event-info-text {
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.5vw;
+}
+
+.event-image:hover,.event-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+  background-color: rgba(46, 45, 45, 0.87);
+}
+
+.event-image:active,.event-info:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
