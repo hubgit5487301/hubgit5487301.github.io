@@ -92,7 +92,6 @@
   height: 20vw;
   border-radius: 10px;
   padding: 2vw;
-  overflow: scroll;
 }
 
 .bottom-second-box::-webkit-scrollbar {

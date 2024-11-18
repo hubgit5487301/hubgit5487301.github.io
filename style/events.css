@@ -1,0 +1,42 @@
+.e-bottom-first-1-box{
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+}
+
+.event {
+  display: flex;
+  gap: 1.5vw;
+  border-radius: 10px;
+  background-color: transparent;
+  height: 15vw;
+  margin-bottom: 1.5vw;
+  padding: 1vw;
+}
+
+.e-event-info {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  width: 69vw;
+  padding: 0%;
+  gap: 1.5vw;
+}
+
+.event-name {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(46, 45, 45, 0.24);
+  border-radius: 5px;
+  padding: 1vw;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+}
+
+.event-details {
+  display: flex;
+  background-color: rgba(46, 45, 45, 0.24);
+  height: 14vw;
+  margin: 0%;
+  border-radius: 10px;
+  padding: 1.5vw;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+}
