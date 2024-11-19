@@ -1,14 +1,14 @@
-.all-events {
+.all-jobs {
   display: grid;
   background-color: transparent;
   margin-top: 1.5vw;
 }
 
-.all-events::-webkit-scrollbar{
+.all-jobs::-webkit-scrollbar{
   display: none;
 }
 
-.event-row {
+.job-row {
   display: grid;
   grid-template-columns: repeat(5 , 1fr);
   background-color: transparent;
@@ -19,11 +19,11 @@
   margin-left: 1vw;
 }
 
-.event-row::-webkit-scrollbar{
+.job-row::-webkit-scrollbar{
   display: none;
 }
 
-.event {
+.job {
   display: flex;
   flex-direction: column;
   padding: 0%;
@@ -33,16 +33,16 @@
   cursor: pointer;
  }
  
- .event:hover {
+ .job:hover {
    transform: scale(1.05);
  }
  
- .event:active {
+ .job:active {
    transform: scale(1);
    opacity: 0.8;
  }
  
- .e-event-icon {
+ .j-job-icon {
    display: flex;
    height: 13vw;
    background-color: transparent;
@@ -51,7 +51,7 @@
    transition: 0.15s;
  }
  
- .event-info {
+ .job-info {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -60,12 +60,12 @@
    padding: 1vw;
  }
 
- .event-info h1 {
+ .job-info h1 {
   font-size: 1.5vw;
   font-weight: bold;
  }
 
- .event-info p{
+ .job-info p{
   font-size: 1vw;
   align-self: start;
   color: rgb(187, 185, 181);

@@ -1,0 +1,56 @@
+.all-alumni {
+  display: grid;
+  background-color: transparent;
+  margin-top: 1.5vw;
+}
+
+.person-row {
+  display: grid;
+  grid-template-columns: repeat(5 , 1fr);
+  background-color: transparent;
+  gap: 1.5vw;
+  overflow: scroll;
+  padding: 2vw;
+  margin-left: 1vw;
+}
+
+
+.person-row::-webkit-scrollbar {
+  display: none;
+}
+
+.person {
+ display: flex;
+ padding: 0%;
+ background-color: transparent;
+ gap: 1.5vw;
+ transition: 0.15s;
+ cursor: pointer;
+}
+
+.person:hover {
+  transform: scale(1.05);
+}
+
+.person:active {
+  transform: scale(1);
+  opacity: 0.8;
+}
+
+.person-image {
+  display: flex;
+  height: 5vw;
+  background-color: transparent;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  border-radius: 10px;
+  transition: 0.15s;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color:  rgba(46, 45, 45, 0.596);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  padding: 1vw;
+}

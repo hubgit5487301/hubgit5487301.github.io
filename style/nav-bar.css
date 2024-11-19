@@ -92,7 +92,6 @@
   transition: 0.15s;
   cursor: pointer;
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.664);
-  
 }
 
 .home-icon:hover,.friends-icon:hover,.events-icon:hover,.contact-us-icon:hover,.job-icon:hover,.profile-icon:hover {
@@ -117,4 +116,71 @@
   transition: 0.15s;
   cursor: pointer;
   box-shadow: none;
+}
+
+.search-bar {
+  display: flex;
+  background-color: transparent;
+  gap: 1.5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.search-input {
+  height: 2vw;
+  flex: 15;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  gap: 1.5vw;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  background-color: rgb(59, 59, 59);
+  color: white;
+  margin-left: 0%;
+  padding-left: 1vw;
+  font-size: 1.1vw;
+}
+
+.search-input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.search-button {
+  flex: 1;
+  border-radius: 5px;
+  border: none;
+  border: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.10s;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+
+.search-icon {
+  height: 1.1vw;
+  background-color: transparent;
+  padding: 0.5vw;
+  border-radius: 10px;
+  align-self: center;
+  transition: 0.15s;
+  cursor: pointer;
+  padding: 0%;
+  padding-top: 0.2vw;
+  margin: 0%;
+}
+
+.search-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.search-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
 }
