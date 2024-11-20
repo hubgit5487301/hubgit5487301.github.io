@@ -2,26 +2,13 @@
   display: none;
   flex: 1;
   flex-flow: column;
-  background-color: rgba(46, 45, 45, 0.603);
+  background-color: transparent;
   border: none;
   height: 70vh;
-  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
   border-radius: 10px;
   justify-content: top;
   align-items: center;
-  overflow: scroll;
   transition: 0.15s;
-}
-
-.middle-box::-webkit-scrollbar {
-  display: none;
-}
-
-.middle-box:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
-  background-color: rgba(46, 45, 45, 0.87);
-
 }
 
 .middle-box-content {

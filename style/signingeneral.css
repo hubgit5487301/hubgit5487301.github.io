@@ -7,31 +7,27 @@
   font-family: Arial,roboto;
   color: white;
   padding: 0.5vw 4vw;
+  margin: 0;
 }
 
-.general::-webkit-scrollbar {
+.general-signin::-webkit-scrollbar {
     display: none;
 }
 
 .main-box {
-    position: fixed;
     display: flex;
     flex: 1;
-    background-color: rgba(46, 45, 45, 0.24);
+    background-color:  rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
     border: none;
-    padding: 35px;
     border-radius: 10px;
-    box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.753);
-    vertical-align: top;
-    overflow: hidden;
-    align-items: flex-start;
-    left: 4.5vw;
-    right: 4.5vw;
-    z-index:1;
-    margin-top: 6.5vw;
+    margin-top: 5.5vw;
     padding-left: 30vw;
     padding-right: 30vw;
+    padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+    margin-bottom: 1.5vw;
 }
+
 
 
 

@@ -1,9 +1,9 @@
 .top-box {
   display: flex;
-  background-color:  rgba(46, 45, 45, 0.24);
   border-radius: 10px;
   height: 4vw;
   justify-content: space-between;
+  background-color:  rgba(0, 0, 0, 0.356);
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   transition: 0.15s;
   padding-bottom: 0.5vw;
@@ -83,7 +83,7 @@
   gap: 2vw;
 }
 
-.home-icon,.friends-icon,.events-icon,.contact-us-icon,.job-icon,.profile-icon {
+.home-icon,.friends-icon,.events-icon,.contact-us-icon,.job-icon,.profile-icon,.social-icon {
   height: 2vw;
   background-color: rgba(46, 45, 45, 0.603);
   padding: 0.5vw;
@@ -94,13 +94,13 @@
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.664);
 }
 
-.home-icon:hover,.friends-icon:hover,.events-icon:hover,.contact-us-icon:hover,.job-icon:hover,.profile-icon:hover {
+.home-icon:hover,.friends-icon:hover,.events-icon:hover,.contact-us-icon:hover,.job-icon:hover,.profile-icon,.social-icon:hover {
   transform: scale(1.14);
   box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
   background-color: rgba(46, 45, 45, 0.87);
 }
 
-.home-icon:active,.friends-icon:active,.events-icon:active,.contact-us-icon:active,.job-icon:active,.profile-icon:active {
+.home-icon:active,.friends-icon:active,.events-icon:active,.contact-us-icon:active,.job-icon:active,.profile-icon,.social-icon:active {
   transform: scale(1);
   opacity: 0.8;
   box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
@@ -183,4 +183,39 @@
   transform: scale(1);
   opacity: 0.8;
   box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color:  transparent;
+  border-radius: 10px;
+  background-color:  rgba(0, 0, 0, 0.356);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  padding: 1.5vw;
+  margin-bottom: 1.5vw;
+  align-items: center;
+}
+
+.footer-right-content {
+  
+  text-align: end;
+}
+
+.footer p {
+  margin: 0%;
+  background-color: transparent;
+  font-size: 1.5vw;
+}
+
+.footer-policy {
+  text-decoration: none;
+  color: white;
+}
+
+.social-links {
+  background-color: transparent;
+  justify-content: center;
+  display: flex;
+  gap: 3vw;
 }
