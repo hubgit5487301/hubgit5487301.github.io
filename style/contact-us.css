@@ -1,0 +1,177 @@
+.first-box{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: transparent;
+  gap: 1.5vw;
+  border-radius: 10px;
+}
+
+.first-1-box {
+  display: flex;
+  flex-direction: column;
+  background-color:  rgba(46, 45, 45, 0.596);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  border-radius: 10px;
+  padding: 1vw;
+}
+
+.first-1-box h1{
+  text-align: center;
+  margin: 0;
+}
+
+.first-1-box h2 {
+  text-align: center;
+  font-size: 1.1vw;
+  font-weight:100;
+  margin-top: 7vw;
+}
+
+.first-1-box p {
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7vw;
+}
+
+.donate-button {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  font-size:1.2vw ;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.10s;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 5vw;
+}
+
+.donate-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.donate-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.first-2-box {
+  display: flex;
+  flex-direction: column;
+  background-color:  rgba(46, 45, 45, 0.596);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  border-radius: 10px;
+  padding: 1vw;
+  align-items: center;
+}
+
+.first-2-box h1{
+  margin: 0;
+  margin-bottom: 1vw;
+}
+
+.get-in-touch {
+  display: grid;
+  background-color: transparent;
+  gap: 1.5vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-info,.submit-message {
+  display: flex;
+  background-color:  rgba(46, 45, 45, 0.596);
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+
+.contact-info H1 {
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0.5vw;
+}
+
+.map-div {
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+}
+
+.map {
+  width: 25vw;
+  flex: 1;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 0;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+}
+
+.submit-message h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.3vw;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 0.1vw;
+}
+
+.message-form *{
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.fname,.lname,.email,.message {
+  background-color:  rgba(46, 45, 45, 0.596);
+  padding: 0.5vw;
+  color: white;
+}
+
+.message {
+  height: 4vw;
+  resize: none;
+}
+
+.submit-message-button {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  font-size:1.2vw ;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.10s;
+  align-self: center;
+  margin-left: -0.5vw;
+  cursor: pointer;
+}
+
+.submit-message-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.submit-message-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}

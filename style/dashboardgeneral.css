@@ -22,14 +22,9 @@
   border-radius: 10px;
   margin-top: 5.5vw;
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
-  padding: 1.5vw 1.5vw 0vw 1.5vw;
-  overflow-y: scroll;
+  padding: 1.5vw 1.5vw 1.5vw 1.5vw;
 }
 
-.bottom-box::-webkit-scrollbar {
-  background-color: transparent;
-  border-radius: 10px;
- }
 
 .bottom-first-box {
   display: flex;
