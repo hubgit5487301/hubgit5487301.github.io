@@ -83,7 +83,7 @@
   gap: 2vw;
 }
 
-.home-icon,.friends-icon,.events-icon,.contact-us-icon,.job-icon,.profile-icon,.social-icon {
+.home-icon,.friends-icon,.events-icon,.contact-us-icon,.job-icon,.profile-icon {
   height: 2vw;
   background-color: rgba(46, 45, 45, 0.603);
   padding: 0.5vw;
@@ -198,7 +198,6 @@
 }
 
 .footer-right-content {
-  
   text-align: end;
 }
 
@@ -218,4 +217,23 @@
   justify-content: center;
   display: flex;
   gap: 3vw;
+}
+
+.social-icon{
+  padding: 0%;
+  background-color: transparent;
+  height: 3vw;
+  border-radius: 10px;
+  transition: 0.15s;
+}
+
+.social-icon:hover {
+  transform: scale(1.14);
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+.social-icon:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
 }
