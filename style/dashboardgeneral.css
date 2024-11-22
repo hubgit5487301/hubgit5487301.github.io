@@ -28,7 +28,8 @@
 
 
 .bottom-first-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: transparent;
   margin-bottom: 1.5vw;
   gap: 1.5vw;
@@ -38,7 +39,9 @@
   display: flex;
   flex: 1;
   background-color: transparent;
+  align-items: center;
 }
+
 
 .college-image {
   display: flex;
@@ -47,9 +50,7 @@
   border: none;
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   border-radius: 10px;
-  transition: 0.15s;
 }
-
 
 .bottom-first-2-box {
   background-color: rgba(46, 45, 45, 0.24);
@@ -57,6 +58,13 @@
   flex: 2;
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   align-items: center;
+  justify-content: center;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .IET-alumni {
@@ -82,9 +90,6 @@
   font-weight: bold;
 }
 
-.login-button {
-  margin-left:13vw ;
-}
 
 .bottom-second-box {
   display: flex;

@@ -1,7 +1,5 @@
 import {alumni,commonindex} from '../data/alumni-data.js';
 
-localStorage.setItem('alumni',JSON.stringify(alumni));
-localStorage.setItem('commonindex',JSON.stringify(commonindex));
 let storedAlumni = JSON.parse(localStorage.getItem('alumni'));
 let storedindex = JSON.parse(localStorage.getItem('commonindex'));
 

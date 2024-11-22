@@ -1,10 +1,11 @@
 import {alumni,commonindex} from '../data/alumni-data.js';
 
 let storedindex = JSON.parse(localStorage.getItem('commonindex'));
+let storedalumni = JSON.parse(localStorage.getItem('alumni'));
 console.log(storedindex)
 
 
-const person = alumni[storedindex];
+const person = storedalumni[storedindex];
 
 const profilehtml = `<div class="first-view">
           <img class="profile-pic" src="${person.personimage}">
