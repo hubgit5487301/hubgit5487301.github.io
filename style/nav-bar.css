@@ -3,7 +3,7 @@
   border-radius: 10px;
   height: 4vw;
   justify-content: space-between;
-  background-color:  rgba(0, 0, 0, 0.356);
+  background-color:  rgba(46, 45, 45, 0.3);
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   transition: 0.15s;
   padding-bottom: 0.5vw;
@@ -185,10 +185,9 @@
   box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
 }
 
-.footer {
+.bottom {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color:  transparent;
   border-radius: 10px;
   background-color:  rgba(0, 0, 0, 0.356);
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
