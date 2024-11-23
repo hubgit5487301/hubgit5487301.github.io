@@ -28,8 +28,5 @@ const profilehtml = `<div class="first-view">
           <p class="experience">${person.details.experience}</p>
           <h1>Contact Information</h1>
           <p class="contact-information">${person.details.contactinfo}</p>
-          <h1>Social Links</h1>
-          <p class="social-media">${person.details.social}</p>
-        </div>
 `; 
 document.querySelector('.js-profile-page').innerHTML = profilehtml;
