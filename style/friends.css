@@ -54,10 +54,12 @@
 .person-name {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
   background-color:  rgba(46, 45, 45, 0.596);
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   padding: 1vw;
+  min-width: 4vw;
 }
 
 .person-name h {

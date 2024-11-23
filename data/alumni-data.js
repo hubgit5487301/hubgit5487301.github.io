@@ -2,6 +2,7 @@ export const alumni =[{
   userid:'21cse71',
   personimage:'images/events-test.jpg',
   personname:'Vikas Yadav',
+  password:'',
   email:'',
   details:{
     batch:'2021-25',
@@ -18,6 +19,7 @@ export const alumni =[{
   userid:'21cse48',
   personimage:'images/events-test.jpg',
   personname:'Prabhat Karush',
+  password:'',
   email:'',
   details:{
     batch:'2021-25',

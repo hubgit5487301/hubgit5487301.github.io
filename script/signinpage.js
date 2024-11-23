@@ -1,22 +1,12 @@
-let leftbox = document.getElementById("leftbox");
-let registerbutton = document.getElementById("registerbutton")
-let forgotpasswordbutton = document.getElementById("forgotpasswordbutton");
+let leftbox = document.querySelector('.js-left-box');
+let centerbox = document.querySelector('.js-center-box');
 
-let middlebox = document.getElementById("middlebox");
-let loginbuttonreg = document.getElementById("loginbuttonreg");
-
-let centerbox = document.getElementById("centerbox");
-let backbutton = document.getElementById("backbutton");
-
+let registerbutton = document.querySelector('.js-register-button');
+let forgotpasswordbutton = document.querySelector('.js-forgot-password-button');
+let backbutton = document.querySelector('.js-back-button');
 
 registerbutton.addEventListener("click", ()=>{
-  leftbox.style.display="none";
-  middlebox.style.display="flex";
-});
-
-loginbuttonreg.addEventListener("click", ()=>{
-  middlebox.style.display="none";
-  leftbox.style.display="flex";
+  window.location.href = 'registration-form.html';
 });
 
 forgotpasswordbutton.addEventListener("click", ()=>{

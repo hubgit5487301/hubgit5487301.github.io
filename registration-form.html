@@ -17,36 +17,49 @@
       <form class="form-box js-form-box">
         <div class="input-form">
           <div class="profile-input js-profile-input">
-            <label for="name">Name</label>
-            <input class="name js-name" type="text" placeholder="Your name">
-            <label for="roll-no">College Roll No</label>
-            <input class="roll-no js-userid" type="text" placeholder="Your Branch">
-            <label for="batch">Batch</label>
-            <input class="batch js-batch" type="year" placeholder="Your Batch">
-            <label for="branch">Branch</label>
-            <input class="branch js-branch" type="text" placeholder="Your Branch">
-            <label for="Email">Email</label>
-            <input class="email js-email" type="email" placeholder="Your email">
-            <button class="submit-button js-submit-button">Submit</button> 
+            <label for="name"><text class="star">*</text>Name</label>
+            <input class="input-default js-name" type="text" placeholder="Your name">
+            <label for="roll-no"><text class="star">*</text>College Roll No</label>
+            <input class="input-default js-userid" type="text" placeholder="Roll no (will be used as your user-id)">
+            <label for="batch"><text class="star">*</text>Batch</label>
+            <select class="input-default js-batch" name="year">
+              <option value="" disabled selected hidden>Select your batch passout year</option>
+            </select>
+            <label for="branch"><text class="star">*</text>Branch</label>
+            <select class="input-default js-branch" name="branch">
+              <option value="" disabled selected hidden>Select your branch</option>
+              <option  value="CSE">Computer Science Engineering</option>
+              <option  value="ME">Mechanical Engineering</option>
+              <option  value="CE">Civil Engineering</option>
+              <option  value="EE">Electrical Engineering</option>
+              <option  value="ECE">Electrical communication Engineering</option>
+            </select>
+            <label for="Email"><text class="star">*</text>Email</label>
+            <input class="input-default js-email" type="email" placeholder="Your email">
+            <label for="Password"><text class="star">*</text>Password</label>
+            <input class="input-default js-password" maxlength="16" minlength="8" autocomplete="new-password" type="password" placeholder="Your password">
+            <label for="Password"><text class="star">*</text>Re-Enter Password</label>
+            <input class="input-default js-password-recheck" maxlength="16" minlength="8" autocomplete="new-password" type="password" placeholder="Enter your password again">
           </div>
-          <!--<div class="profile-input-2 js-profile-input-2">
-            <label for="name">temp</label>
-            <input class="name" type="text" placeholder="Your name">
-            <label for="userid">College Roll No</label>
-            <input class="roll-no" type="text" placeholder="Your Branch">
-            <label for="batch">Batch</label>
-            <input class="batch" type="year" placeholder="Your Batch">
-            <label for="branch">Branch</label>
-            <input class="branch" type="text" placeholder="Your Branch">
-            <label for="Email">Email</label>
-            <input class="email" type="email" id="email" placeholder="Your email">      
-          </div>-->
+          <div class="profile-input-2 js-profile-input-2">
+            <label for="about-me">About you</label>
+            <textarea class="about-you js-about-me" type="text" placeholder="About you"></textarea>
+            <label for="education">Education</label>
+            <textarea class="education js-education" type="text" placeholder="Education"></textarea>
+            <label for="current-role">Current work of place</label>
+            <textarea class="current-role js-current-role" type="text" placeholder="Current role"></textarea>
+            <label for="experience">Work experience</label>
+            <textarea class="experience js-experience" type="text" placeholder="Work experience"></textarea>
+            <label for="contact-info">Contact information</label>
+            <textarea class="contact-info js-contact-info" type="text" placeholder="Contact information"></textarea>      
+          </div>
         </div>
-        <!--<button class="submit-button js-submit-button">Submit</button>  -->
+        <button class="submit-button js-submit-button">Submit</button>
       </form>
     </div>
     <footer class="bottom js-bottom"></footer>
     <script src="script/nav-bar.js"></script>
     <script type="module" src="script/registration-form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
   </body>
 </html>
