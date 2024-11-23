@@ -5,6 +5,15 @@
   justify-items: center;
   align-items: center;
 }
+
+.top-text {
+  align-self: center;
+  background-color: rgba(46, 45, 45, 0.604);
+  box-shadow: rgba(20, 20, 20, 0.663) 0px 18px 16px 0px;
+  padding: 1vw 2vw;
+  border-radius: 5px;
+}
+
 .input-form {
   display: grid;
   grid-template-columns: 1fr 1fr;

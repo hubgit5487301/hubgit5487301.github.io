@@ -61,6 +61,31 @@
   justify-content: center;
 }
 
+.login-dash-button {
+  margin-top: 3.5vw;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  font-weight: bold;
+  padding: 0.3vw 1vw;
+  font-size: 1.7vw ;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.login-dash-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.login-dash-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
 .home-link {
   display: flex;
   align-items: center;
