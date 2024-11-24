@@ -36,7 +36,7 @@
               <option  value="ECE">Electrical communication Engineering</option>
             </select>
             <label for="Email"><text class="star">*</text>Email</label>
-            <input class="input-default js-email" type="email" placeholder="Your email">
+            <input class="input-default js-email" autocomplete="email" type="email" placeholder="Your email">
             <label for="Password"><text class="star">*</text>Password</label>
             <input class="input-default js-password" maxlength="16" minlength="8" autocomplete="new-password" type="password" placeholder="Your password">
             <label for="Password"><text class="star">*</text>Re-Enter Password</label>
@@ -52,7 +52,13 @@
             <label for="experience">Work experience</label>
             <textarea class="experience js-experience" type="text" placeholder="Work experience"></textarea>
             <label for="contact-info">Contact information</label>
-            <textarea class="contact-info js-contact-info" type="text" placeholder="Contact information"></textarea>      
+            <textarea class="contact-info js-contact-info" type="text" placeholder="Contact information"></textarea>
+            <label class="custom-pic-input" type="file">Profile picture</label>
+             <div class="pic-input-box">
+              <label for="file-upload" class="pic-input-button js-pic-input-button">Upload</label>
+              <input id="file-upload" type="file" class="pic-input js-pic-input">
+              <span class="file-name js-filename">Filename</span>
+             </div>
           </div>
         </div>
         <button class="submit-button js-submit-button">Submit</button>

@@ -48,11 +48,14 @@ function formInput() {
       changefieldcolordefault
     (document.querySelector('.js-password-recheck'));
     }
+    
     let newpass=hashPassword(password);
+
+    const personimage = localStorage.getItem('picdata') || 'images/events-test.jpg';
 
     storedAlumni.push({
       userid: userid,
-      personimage: 'images/events-test.jpg',
+      personimage: personimage,
       personname: inputname,
       password: newpass,
       email: email,
@@ -197,6 +200,41 @@ function isValidUserid(userid) {
   return useridregex.test(userid);
 }
 
+function picupload () {
+  document.querySelector('.js-pic-input').addEventListener('change', (event) => {
+    const filename = event.target.files[0] ? event.target.files[0].name : 'No file chosen';
+    const file =event.target.files[0];
+    if (file) {
+      const allowed = ['image/jpeg', 'image/png'];
+      if (!allowed.includes(file.type)) {
+        document.querySelector('.js-filename').textContent = 'invalid file use a .jpg or .png';
+        document.querySelector('.js-filename').style.color = 'red';
+        return;
+      }
+      else {
+        document.querySelector('.js-filename').textContent = filename;
+        document.querySelector('.js-filename').style.color = 'white';
+      }
+    }
+
+    if (file) {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onloadend = () => {
+        const file64 = reader.result;
+        console.log(file64);
+        localStorage.setItem('picdata', file64);
+      }
+    }
+  })}
    
 yearSelect();
 formInput();
+picupload();
+
+
+
+
+
+
+

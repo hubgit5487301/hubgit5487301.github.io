@@ -78,7 +78,9 @@
   padding: 0.5vw;
   color: white;
 }
-
+.profile-input-2 .pic-input {
+  display: none;
+}
 .submit-button {
   border: none;
   color: white;
@@ -105,7 +107,7 @@
 }
 
 .about-you,.education,.current-role,.experience,.contact-info {
-  height: 3.95vw;
+  height: 2.8vw;
   resize: none;
   padding: 0.5vw;
   color: white;
@@ -113,4 +115,41 @@
   background-color: rgb(59, 59, 59);
   border: 1.5px solid rgb(59, 59, 59);
   border-radius: 5px;
+}
+
+.pic-input-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1vw;
+  background-color: rgba(46, 45, 45, 0.604);
+  border-radius: 5px;
+  padding: 1vw;
+}
+
+.pic-input-button{
+  background-color: rgb(21, 101, 221);
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+  transition: 0.15s;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 5px 20px 0px rgb(20, 20, 20);
+}
+
+.pic-input-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+
+.pic-input-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.file-name {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
 }
