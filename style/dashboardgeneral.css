@@ -235,3 +235,35 @@
   font-size: 1.5vw;
   font-weight: bold;
 }
+
+.input-error {
+  border: 1.5px solid rgba(156, 74, 74, 1);
+  background-color: rgba(156, 74, 74, 1);
+  outline: none;
+  border-width: 1.5px;
+  padding: 0.5vw;
+  color: white;
+  transition: 0.01s;
+  border-radius: 4px;
+}
+
+.input-default {
+  background-color: rgb(59, 59, 59);
+  outline: none;
+  border-color: rgb(59, 59, 59);
+  border: solid;
+  border-width: 1.5px;
+  border-color: rgb(59, 59, 59);
+  border-radius: 4px;
+  padding: 0.5vw;
+  color: white;
+  transition: 0.01s;
+  resize: vertical;
+}
+
+
+
+.star {
+  color: rgb(236, 60, 60);
+  font-size: 1.3vw;
+}

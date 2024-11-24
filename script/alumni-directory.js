@@ -1,7 +1,5 @@
-import {alumni,commonindex} from '../data/alumni-data.js';
-
 let storedAlumni = JSON.parse(localStorage.getItem('alumni'));
-let storedindex = JSON.parse(localStorage.getItem('commonindex'));
+let storedindex = JSON.parse(localStorage.getItem('personcommonindex'));
 
 let personHtml = '';
 
@@ -23,7 +21,7 @@ document.querySelectorAll('.js-person-profile-link')
     .forEach((link, index) => {
       link.addEventListener('click' ,() => {
         storedindex = index;
-        localStorage.setItem('commonindex',JSON.stringify(storedindex));
+        localStorage.setItem('personcommonindex',JSON.stringify(storedindex));
       });
     });
 

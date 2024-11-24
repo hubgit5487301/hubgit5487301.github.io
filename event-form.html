@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="/style/dashboardgeneral.css">
+    <link rel="stylesheet" href="/style/nav-bar.css">
+    <link rel="stylesheet" href="/style/event-form.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="top-box js-top-box"></div>
+    <div class="bottom-box">
+      <div class="event-form-box">
+        <H>Event Form</H>
+        <form class="event-form js-event-form">
+          <label for="event-name">Event name<text class="star">*</text></label>
+          <input class="input-default js-event-name" type="test" placeholder="Event name">
+          <label for="event-date">Event date-time<text class="star">*</text></label>
+          <input class="input-default js-event-date-time" type="datetime-local">
+          <label for="event-location">Event location<text class="star">*</text></label>
+          <input class="input-default js-event-location" type="text" placeholder="Event location">
+          <label for="event-contact-info">Contact info<text class="star">*</text></label>
+          <input class="input-default js-event-contact-info-email" autocomplete="email" type="email" placeholder="Email">
+          <input class="input-default js-event-contact-info-phoneno" minlength="10" maxlength="10" type="number" placeholder="Phone No">
+          <label for="event-location">Event description<text class="star">*</text></label>
+          <textarea class="input-default js-event-description" type="text" placeholder="Event description"></textarea>
+          <div class="files-upload">
+            <label for="event-file">Event file (if any) :-</label>
+            <input class="event-file js-event-file" type="file" accept=".pdf, .docx">
+            <label for="event-file">Event Logo :-</label>
+            <input class="event-file js-event-pic" type="file" accept=".pdf, .docx">
+          </div>
+          <button type="submit" class="event-submit js-event-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer class="bottom js-bottom"></footer>
+    <script src="script/nav-bar.js"></script>
+    <script type="module" src="script/event-form.js"></script>
+  </body>
+</html>

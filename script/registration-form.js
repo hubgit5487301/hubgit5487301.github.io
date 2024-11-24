@@ -1,5 +1,4 @@
-import {alumni} from '../data/alumni-data.js';
-import { yearSelect,changefieldcolor,changefieldcolordefault,inputCheck,isValidUserid,picupload } from './util.js';
+import { changefieldcolor,changefieldcolordefault,inputCheck,isValidUserid,isValidEmail,upload as profilepicupload} from '../script/util.js';
 
 let storedAlumni = JSON.parse(localStorage.getItem('alumni')) || [];
 
@@ -18,8 +17,18 @@ function formInput() {
     const currentrole = document.querySelector('.js-current-role').value;
     const experience = document.querySelector('.js-experience').value;
     const contactinfo = document.querySelector('.js-contact-info').value;
+    const personimage = localStorage.getItem('picdata') || 'images/events-test.jpg';
+    const fields = [
+      { value: inputname, selector: '.js-name' },
+      { value: userid, selector: '.js-userid' },
+      { value: batch, selector: '.js-batch' },
+      { value: branch, selector: '.js-branch' },
+      { value: email, selector: '.js-email' },
+      { value: password, selector: '.js-password' },
+      { value: renterpassword, selector: '.js-password-recheck' },
+    ];
 
-    let inputcheck = inputCheck(inputname, userid, batch, branch, email, password, renterpassword);
+    let inputcheck = inputCheck(fields);
     if (inputcheck === true)
       {
         alert('Enter details correctly');
@@ -52,7 +61,6 @@ function formInput() {
     
     let newpass=hashPassword(password);
 
-    const personimage = localStorage.getItem('picdata') || 'images/events-test.jpg';
 
     storedAlumni.push({
       userid: userid,
@@ -91,18 +99,22 @@ function hashPassword(password) {
     return CryptoJS.SHA256(password).toString(CryptoJS.enc.Base64)
 }
 
-function isValidEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
 
+
+function yearSelect () {
+  const startYear = 2002;
+  const endYear = new Date().getFullYear();
+  const yearSelect = document.querySelector('.js-batch');
+  for (let year = startYear; year <= endYear; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    yearSelect.appendChild(option);
+  }
+};
+
+
+const allowedfiletype = ['image/jpeg', 'image/png'];
 yearSelect();
+profilepicupload('.js-pic-input',allowedfiletype,'picdata');
 formInput();
-picupload();
-
-
-
-
-
-
-

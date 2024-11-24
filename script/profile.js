@@ -1,8 +1,5 @@
-import {alumni,commonindex} from '../data/alumni-data.js';
-
-let storedindex = JSON.parse(localStorage.getItem('commonindex'));
 let storedalumni = JSON.parse(localStorage.getItem('alumni'));
-console.log(storedindex)
+let storedindex = JSON.parse(localStorage.getItem('personcommonindex'));
 
 
 const person = storedalumni[storedindex];
