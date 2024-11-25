@@ -42,7 +42,7 @@ export function upload (input,allowed,filetarget) {
     if (file) {
       
       if (!allowed.includes(file.type)) {
-        alert('invalid file use a .jpg or .png');
+        alert('invalid file ');
         return;
       }
     }
@@ -57,3 +57,44 @@ export function upload (input,allowed,filetarget) {
       }
     }
   })}
+
+export function formatEventDate(eventdate) {
+  const date = new Date(eventdate);
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const year = date.getFullYear();
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  return `${day} ${date.toLocaleString('default', { month: 'long' })} ${year}, ${hours}:${minutes}`;
+}
+
+
+export function darkMode () {
+  document.querySelector('.js-dark-mode-button').addEventListener('click', () => {
+  const generaldashboard = document.querySelector('.general-dashboard');
+  const bottombox = document.querySelector('.bottom-box');
+  const navbar = document.querySelector('.js-top-box');
+  const bottombar = document.querySelector('.js-bottom');
+  const inputboxes = document.querySelectorAll('input');
+  const currentBgColor = getComputedStyle(navbar).backgroundColor;
+
+    if(currentBgColor === 'rgb(255, 255, 255)') {
+      generaldashboard.style.color = 'rgb(255, 255, 255)';
+      navbar.style.backgroundColor = 'black';
+      bottombar.style.backgroundColor = 'black';
+      bottombox.style.backgroundColor = 'black';
+      document.querySelectorAll('a').forEach(link => {link.style.color = 'rgb(255, 255, 255)';});
+      inputboxes.forEach(input => { input.style.backgroundColor = 'rgb(255, 255, 255)';})
+      //console.log('a' + bottombox.style.backgroundColor);
+     }
+     else {
+      generaldashboard.style.color = 'black';
+      bottombox.style.backgroundColor = 'rgb(255, 255, 255)';
+      navbar.style.backgroundColor = 'rgb(255, 255, 255)';
+      bottombar.style.backgroundColor = 'rgb(255, 255, 255)';
+      document.querySelectorAll('a').forEach(link => {link.style.color = 'black';});
+      //console.log('b' + bottombox.style.backgroundColor);
+    }
+  })
+
+}

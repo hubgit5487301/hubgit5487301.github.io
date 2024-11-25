@@ -4,7 +4,7 @@ let storedindex = JSON.parse(localStorage.getItem('personcommonindex'));
 let personHtml = '';
 
 storedAlumni.forEach((person) => {
-    personHtml +=`<a id="links" class="person-profile-link js-person-profile-link" href="person-profile.html">
+    personHtml +=`<a class="person-profile-link js-person-profile-link" href="person-profile.html">
         <div class="person">
             <img class="person-image" src="${person.personimage}">
             <div class="person-name">

@@ -1,6 +1,6 @@
-import { upload as eventupload, inputCheck ,changefieldcolor,changefieldcolordefault,isValidEmail} from "../script/util.js";
+import { upload as upload, inputCheck ,changefieldcolor,isValidEmail} from "../script/util.js";
 
-let storedEvents = JSON.parse(localStorage.getItem('event')) || {};
+let storedEvents = JSON.parse(localStorage.getItem('events')) || {};
 
 function eventForm () {
 document.querySelector('.js-event-submit').addEventListener(('click'), (event) => {
@@ -33,7 +33,7 @@ document.querySelector('.js-event-submit').addEventListener(('click'), (event) =
     return;
   }
 
-  const eventDay = eventdate.split('T')[0];
+  const eventDay = eventdate;
   console.log(eventDay);
 
   if(!storedEvents[eventDay]){
@@ -49,22 +49,19 @@ document.querySelector('.js-event-submit').addEventListener(('click'), (event) =
     eventphone: eventphone,
     eventdescription: eventdescription,
     eventfile: eventfile,
-    eventimage: eventimage
-  });
+    eventimage: eventimage,}
+  );
 console.log(storedEvents);
   localStorage.setItem('events',JSON.stringify(storedEvents));
   alert('Event details submitted');
-  window.location.href='events.html';
+  window.location.href='event-directory.html';
 
 })}
 
 
 const allowedfile =['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-const allowedpic =['images/jpeg','images/png'];
-eventupload('.js-event-file',allowedfile,'eventfile');
-eventupload('.js-event-pic',allowedpic,'eventpic');
+const allowedpic =['image/jpeg','image/png'];
+upload('.js-event-file',allowedfile,'eventfile');
+upload('.js-event-pic',allowedpic,'eventpic');
 
 eventForm();
-
-
-

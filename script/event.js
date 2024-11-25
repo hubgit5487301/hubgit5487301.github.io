@@ -1,21 +1,24 @@
-import {event} from '../data/event-data.js'
-let eventhtml = '';
+import { formatEventDate } from "../script/util.js";
 
-event.forEach((event) => {
-  eventhtml += `
-      <div class="bottom-second-event-box">
-        <img class="event-image" src="${event.image}">
-        <div class="event-info">
-          <p class="event-info-text">${event.name}</p>
-          <p class="event-info-text">${event.date}</p>
+let storedEvents = JSON.parse(localStorage.getItem('events'));
+let storedindex = JSON.parse(localStorage.getItem('eventcommonindex'));
+const eventobject = storedEvents[storedindex];
+const event = eventobject[0];
+
+const eventHtml = `
+        <div class="basic-details js-basic-details">
+          <img class="event-pic" src=${event.eventimage}>
+          <p class="name">${event.eventname}</p>
+          <p class="date">${formatEventDate(event.eventdate)}</p>
         </div>
-      </div>`;
-
-});
-document.querySelector('.js-bottom-second-event-boxes').innerHTML = eventhtml;
-
-let wheel = document.querySelector('.js-bottom-second-event-boxes');
-wheel.addEventListener('wheel', (event) => {
-  event.preventDefault(); 
-  wheel.scrollLeft += event.deltaY; 
-});
+        <div class="event-details js-event-details">
+          <h1>Event Description</h1>
+          <p>${event.eventdescription}</p>
+          <h1>Event Location</h1>
+          <p>${event.eventlocation}</p> 
+          <h1>Contact Information</h1>
+          <p>Email: ${event.eventemail}</p>
+          <p>Phone No: ${event.eventphone}</p>
+        </div>
+`;         
+document.querySelector('.js-event-page').innerHTML = eventHtml;

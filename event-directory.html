@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Alumni Directory</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Events</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/dashboardgeneral.css">
+    <link rel="stylesheet" href="/style/event-directory.css">
+    <link rel="stylesheet" href="/style/login.css">
     <link rel="stylesheet" href="/style/nav-bar.css">
-    <link rel="stylesheet" href="/style/person-profile.css">
   </head>
   <body class="general-dashboard">
     <div class="top-box js-top-box"></div>
     <div class="bottom-box">
-      <div class="profile-page js-profile-page"></div>
+      <div class="page-heading"><head>Events</head></div>
+      <search class="search-bar">
+        <input class="search-input" placeholder="Search"></input>
+        <button class="search-button">
+          <img class="search-icon" src="images/search-icon.svg" >
+      </search>
+      <div class="all-events">
+        <div class="event-row js-events-row"></div>
+      </div>
     </div>
     <footer class="bottom js-bottom"></footer>
     <script type="module" src="script/nav-bar.js"></script>
-    <script type="module" src="script/profile.js"></script>
+    <script type="module" src="script/events-render.js"></script>
   </body>
 </html>

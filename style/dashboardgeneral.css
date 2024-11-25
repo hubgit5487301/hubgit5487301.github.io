@@ -5,10 +5,19 @@
   background-size: cover;
   background-position: center;
   font-family: Arial,roboto;
-  color: white;
   padding: 0.5vw 4vw;
   margin: 0%;
   overflow: overlay;
+  color: white;
+}
+
+:-webkit-any-link{
+  color: white;
+}
+
+input,textarea,select {
+  color: white;
+  background-color: rgb(59, 59, 59);
 }
 
 .general-dashboard::-webkit-scrollbar{
@@ -18,14 +27,14 @@
 .bottom-box {
   display: flex;
   flex-direction: column;
-  background-color:  rgba(0, 0, 0, 0.356);
+  background-color:  transparent;
   border-radius: 10px;
   margin-top: 5.5vw;
+  background-color: rgba(0, 0, 0, 0.357);
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   padding: 1.5vw 1.5vw 1.5vw 1.5vw;
   margin-bottom: 1.5vw;
 }
-
 
 .bottom-first-box {
   display: grid;
@@ -197,6 +206,7 @@
 
 .event-image {
   height: 10vw;
+  width: 13.5vw;
   box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
   margin-bottom: 1vw;
   border-radius: 10px;
@@ -215,9 +225,17 @@
   padding: 0.5vw 1vw;
   margin-top: 0.2vw;
   align-items: center;
+  text-align: center;
+  gap: 0.8vw;
 }
 
 .event-info-text {
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.5vw;
+}
+
+.event-info-text-1 {
   font-weight: bold;
   margin: 0;
   line-height: 1.5vw;
@@ -242,7 +260,6 @@
   outline: none;
   border-width: 1.5px;
   padding: 0.5vw;
-  color: white;
   transition: 0.01s;
   border-radius: 4px;
 }
@@ -256,7 +273,6 @@
   border-color: rgb(59, 59, 59);
   border-radius: 4px;
   padding: 0.5vw;
-  color: white;
   transition: 0.01s;
   resize: vertical;
 }
